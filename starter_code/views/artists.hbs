@@ -1,0 +1,19 @@
+
+
+<ul class="d-flex justify-content-around flex-wrap">
+    {{#each list}}
+        <div class="card" style="width: 400px;">
+            <img class="card-img-top" 
+            {{#if images.1.url}}
+            src="{{images.1.url}}" alt="Card image cap">
+            {{else}}
+            src="http://via.placeholder.com/640x360" alt="Card image cap">
+            {{/if}}
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <a href="/albums/{{id}}" class="btn btn-primary">View album</a>
+            </div>
+        </div>
+    {{/each}}
+</ul>
+
